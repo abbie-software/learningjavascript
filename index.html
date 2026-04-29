@@ -10,17 +10,11 @@
         message = 'Hello!';
 
         alert(message); // shows the variable content
-    </script>
-    <script>
         message = 'Hello!'; // define the variable and assign the value
 
 alert(message); // Hello!
-    </script>
-    <script>
         let user = 'John'
   , age = 25;
-    </script>
-    <script>
         message;
 
 message = 'Hello!';
@@ -36,6 +30,40 @@ let admin = ;
 let name = "John";
 admin=name;
 alert(admin);
+    </script>
+    <script>
+        name = "John";
+
+// embed a variable
+alert( `Hello, ${name}!` ); // Hello, John!
+
+// embed an expression
+alert( `the result is ${1 + 2}` ); // the result is 3
+let nameFieldChecked = true; // yes, name field is checked
+let ageFieldChecked = false; // no, age field is not checked
+let isGreater = 4 > 1;
+
+alert( isGreater ); // true (the comparison result is "yes")
+age;
+
+alert(age); // shows "undefined"
+typeof undefined // "undefined"
+
+typeof 0 // "number"
+
+typeof 10n // "bigint"
+
+typeof true // "boolean"
+
+typeof "foo" // "string"
+
+typeof Symbol("id") // "symbol"
+
+typeof Math // "object"  (1)
+
+typeof null // "object"  (2)
+
+typeof alert // "function"  (3)
     </script>
 </body>
 </html>
