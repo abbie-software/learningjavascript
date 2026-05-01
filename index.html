@@ -26,7 +26,7 @@ let $ = 1; // declared a variable with the name "$"
 let _ = 2; // and now a variable with the name "_"
 
 alert($ + _); // 3
-let admin = ;
+let admin = "John";
 let name = "John";
 admin=name;
 alert(admin);
@@ -64,6 +64,69 @@ typeof Math // "object"  (1)
 typeof null // "object"  (2)
 
 typeof alert // "function"  (3)
+let value = true;
+alert(typeof value); // boolean
+
+value = String(value); // now value is a string "true"
+alert(typeof value); // string
+let str = "123";
+alert(typeof str); // string
+
+let num = Number(str); // becomes a number 123
+
+alert(typeof num); // number
+age = Number("an arbitrary string instead of a number");
+
+alert(age); // NaN, conversion failed
+alert( Boolean(1) ); // true
+alert( Boolean(0) ); // false
+
+alert( Boolean("hello") ); // true
+alert( Boolean("") ); // false
+
+x = 1;
+
+x = -x;
+alert( x ); // -1, unary negation was applied
+
+x = 1, y = 3;
+alert( y - x ); // 2, binary minus subtracts values
+alert( 5 % 2 ); // 1, the remainder of 5 divided by 2
+alert( 8 % 3 ); // 2, the remainder of 8 divided by 3
+alert( 8 % 4 ); // 0, the remainder of 8 divided by 4
+alert( 2 ** 2 ); // 2² = 4
+alert( 2 ** 3 ); // 2³ = 8
+alert( 2 ** 4 ); // 2⁴ = 16
+
+let s = "my" + "string";
+alert(s); // mystring
+
+// No effect on numbers
+let x = 1;
+alert( +x ); // 1
+
+let y = -2;
+alert( +y ); // -2
+
+// Converts non-numbers
+alert( +true ); // 1
+alert( +"" );   // 0
+//if we want to treat them as numbers, we need to convert them then sum them otherwise it would display 23
+let apples = "2";
+let oranges = "3";
+
+// both values converted to numbers before the binary plus
+alert( +apples + +oranges ); // 5
+
+// the longer variant
+// alert( Number(apples) + Number(oranges) ); // 5
+
+let n = 2;
+n += 5; // now n = 7 (same as n = n + 5)
+n *= 2; // now n = 14 (same as n = n * 2)
+
+alert( n ); // 14
     </script>
+
 </body>
 </html>
